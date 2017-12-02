@@ -99,9 +99,9 @@
   .ipad {
     display: block;
     position: absolute;
-    right: 100px;
+    right: 60px;
     z-index: 1;
-    height: 427px;
+    height: 365px;
     margin-top: 50px;
     transform: rotate(-6deg);
     max-width: 45%;
@@ -203,6 +203,15 @@
 
   .hero {
     padding-bottom: 220px;
+  }
+
+  .topic-wrapper + .topic-wrapper {
+    margin: 0;
+  }
+
+  .topic p,
+  .topic-headline {
+    text-align: center;
   }
 }
 
