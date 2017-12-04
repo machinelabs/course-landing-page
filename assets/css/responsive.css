@@ -168,23 +168,6 @@
   }
 }
 
-.team-member {
-  text-align: center;
-}
-
-.email-form-div {
-  max-width: inherit;
-  margin: auto;
-}
-
-.webscope {
-  margin-top: 0;
-}
-
-.social-links {
-  float: right;
-}
-
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
