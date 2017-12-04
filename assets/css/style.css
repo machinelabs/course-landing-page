@@ -641,6 +641,7 @@ a.plan-btn:active {
 }
 
 .submit-btn {
+  cursor: pointer;
   background-color: #f88b31;
   border: 1px solid #f88b31;
   border-radius: 10px;
