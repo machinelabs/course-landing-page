@@ -39,6 +39,7 @@ button:focus {
 }
 
 .hero-background {
+  min-height: 100%;
   overflow: hidden;
   position: relative;
   background: -webkit-linear-gradient(117deg, #0d47a1, #42a5f5);
