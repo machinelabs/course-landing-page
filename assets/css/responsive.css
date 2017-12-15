@@ -13,7 +13,7 @@
     padding-bottom: 60px;
   }
 
-  .imac-section-desc {
+  .screen-section-desc {
     font-size: 16px;
     text-align: left;
     line-height: inherit;
@@ -96,18 +96,13 @@
     text-align: left;
   }
 
-  .ipad {
-    display: block;
-    position: absolute;
-    right: 60px;
+  .promo-video {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 30px;
     z-index: 1;
-    height: 365px;
-    margin-top: 50px;
-    transform: rotate(-6deg);
-    max-width: 45%;
-    border-radius: 25px;
-    background: #fff;
-    box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 0px 33px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);
+    padding-bottom: 15px;
   }
 
   .ipad-screen {
@@ -140,7 +135,7 @@
     padding-left: 30px;
   }
 
-  .imac-section-desc {
+  .screen-section-desc {
     font-size: 16px;
     line-height: 30px;
     max-width: 500px;
@@ -171,6 +166,10 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
+  .hero-background {
+    min-height: 100%;
+  }
+
   .header-headline {
     max-width: 380px;
   }

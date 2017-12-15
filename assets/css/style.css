@@ -39,7 +39,6 @@ button:focus {
 }
 
 .hero-background {
-  min-height: 100%;
   overflow: hidden;
   position: relative;
   background: -webkit-linear-gradient(117deg, #0d47a1, #42a5f5);
@@ -407,11 +406,11 @@ button:focus {
   list-style-type: initial;
 }
 
-.imac-section-header {
+.screen-section-header {
   padding-bottom: 35px;
 }
 
-.imac-section-desc {
+.screen-section-desc {
   text-align: center;
   font-size: 16px;
   line-height: 40px;
@@ -420,7 +419,7 @@ button:focus {
   padding-bottom: 50px;
 }
 
-.imac-screen {
+.screen {
   display: block;
   margin: 0 auto;
   max-width: 80%;
