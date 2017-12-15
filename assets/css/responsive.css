@@ -166,10 +166,6 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
-  .hero-background {
-    min-height: 100%;
-  }
-
   .header-headline {
     max-width: 380px;
   }
