@@ -482,7 +482,7 @@ ul {
   font-size: 45px;
 }
 
-.plan-cost::before {
+.plan-cost:not(.no-currency)::before {
   content: "$";
 }
 
