@@ -60,11 +60,12 @@ function setRemainingDays() {
 }
 
 function getCurrentPeriod() {
-  var sortedPeriods = periods.sort(function (a, b) {
-    var distanceA = Math.abs(today - a.date);
-    var distanceB = Math.abs(today - b.date);
-    return distanceA - distanceB;
+
+  let currentPeriod = periods.sort(function(a, b) {
+    return a.date - b.date;
+  }).find(function (p) {
+    return Date.now() <= p.date;
   });
 
-  return sortedPeriods[0];
+  return currentPeriod;
 }
