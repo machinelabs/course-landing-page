@@ -3,8 +3,8 @@ var regularPrice = 299;
 var periods = [
   { date: new Date(2017, 11, 31), price: 89 },            // End Q4 2017
   { date: new Date(2018, 2, 31), price: 119 },            // End Q1 2018
-  { date: new Date(2018, 5, 30), price: 149 },            // End Q2 2018
-  { date: new Date(2018, 8, 30), price: 239 },            // End Q3 2018
+  //{ date: new Date(2018, 5, 30), price: 149 },            // End Q2 2018
+  //{ date: new Date(2018, 8, 30), price: 239 },            // End Q3 2018
   { date: new Date(2018, 9, 1), price: regularPrice }     // Regular price beginning Q4
 ]
 
@@ -40,10 +40,11 @@ function setRemainingDays() {
   $regularPrice = $('.regular-price');
 
   var currentPeriod = getCurrentPeriod();
+  var nextPeriod = getPeriodAfter(currentPeriod)
   var price = currentPeriod['price'];
   var discount = Math.floor(100 - price * 100 / regularPrice);
   var day = 1000 * 60 * 60 * 24;
-  var daysLeft = Math.ceil((currentPeriod['date'].getTime() - today.getTime()) / (day));
+  var daysLeft = Math.ceil((nextPeriod['date'].getTime() - today.getTime()) / (day));
 
   if (daysLeft <= 7) {
     $daysContainer.addClass('danger');
@@ -61,11 +62,19 @@ function setRemainingDays() {
 
 function getCurrentPeriod() {
 
-  let currentPeriod = periods.sort(function(a, b) {
+  var sortedPeriods = periods.sort(function(a, b) {
     return a.date - b.date;
-  }).find(function (p) {
-    return Date.now() <= p.date;
+  })
+  .filter(function(p) {
+    return Date.now() >= p.date
   });
 
+  var currentPeriod = sortedPeriods[sortedPeriods.length -1];
+
   return currentPeriod;
+}
+
+function getPeriodAfter(period) {
+  var idx = periods.indexOf(period)
+  return idx === periods.length - 1 ? period : periods[idx + 1]
 }
