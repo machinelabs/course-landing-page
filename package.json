@@ -1,0 +1,25 @@
+{
+  "name": "@machinelabs/course-landing-page",
+  "version": "1.0.0",
+  "description": "Machine Learning Jump Start online course page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machinelabs/course-landing-page.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/machinelabs/course-landing-page/issues"
+  },
+  "homepage": "https://github.com/machinelabs/course-landing-page#readme",
+  "dependencies": {
+    "serve": "^6.5.6"
+  },
+  "devDependencies": {
+    "firebase-tools": "3.18.4"
+  }
+}
