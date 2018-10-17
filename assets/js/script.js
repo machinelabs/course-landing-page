@@ -5,7 +5,7 @@ var periods = [
   { date: new Date(2018, 2, 31), price: 119 },            // End Q1 2018
   //{ date: new Date(2018, 5, 30), price: 149 },            // End Q2 2018
   //{ date: new Date(2018, 8, 30), price: 239 },            // End Q3 2018
-  { date: new Date(2018, 9, 1), price: regularPrice }     // Regular price beginning Q4
+  { date: new Date(2019, 3, 31), price: regularPrice }     // Regular price beginning Q4
 ]
 
 $(document).ready(function () {
